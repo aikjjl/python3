@@ -4,7 +4,7 @@
 
 def CreateNum():
 	print("start")
-	a, b = 0, 1
+	a, b = 2, 1
 	for i in range(5):
 		print("1")
 		yield b
@@ -12,3 +12,7 @@ def CreateNum():
 		print("2")
 	print("stop")
 
+a=CreateNum()
+next(a)
+next(a)
+next(a)
